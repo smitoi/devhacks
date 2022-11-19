@@ -1,4 +1,4 @@
-id,name,category_id
+product_id,name,category_id
 1,Flour,1
 2,Eggs,1
 3,Cacao,2

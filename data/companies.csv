@@ -1,4 +1,4 @@
-id,name,category_id
+company_id,name,category_id
 1,Fast food Restaurant,2
 2,Traditional Restaurant,3
 3,Sweet Truck,5
