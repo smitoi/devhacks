@@ -1,4 +1,4 @@
-order_id,company_id,product_ids,is_reorder
+order_id,company_id,product_id,is_reorder
 1,1,1,0
 1,1,2,0
 1,1,8,0
