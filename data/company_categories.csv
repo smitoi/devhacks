@@ -5,7 +5,6 @@ category_id,name,parent_id
 4,food-trucks,-1
 5,food-trucks.sweets,4
 6,hotel,-1
-7,cafe,-1
-8,cars,-1
-9,cars.service,8
-10,cars.washing,8
+7,cars,-1
+8,cars.service,8
+9,cars.washing,8
