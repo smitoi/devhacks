@@ -1,0 +1,17 @@
+id,name,parent_id
+1,food,-1
+2,food.sweet,1
+3,food.meat,1
+4,food.vegan,1
+5,food.sweet.fruits,2
+6,food.sweet.sweets,2
+7,hygiene,-1
+8,hygiene.cleaning,7
+9,hygiene.cosmetics,7
+10,hygiene.cosmetics.bath,9
+11,hygiene.cleaning.materials,8
+12,hygiene.cleaning.consumables,8
+13,cars,-1
+14,cars.cleaning,13
+15,cars.components,13
+16,cars.consumables,13
