@@ -16,9 +16,6 @@ average_day_of_week = orders.groupby('company_id')['day_of_week'].mean().to_fram
 
 companies = companies.merge(how_frequent_customer_reorders_products, on='company_id', how='left')
 
-# TO REMOVE
-companies = companies.drop(['name'], axis=1)
-
 number_of_purchases_for_products = orders.groupby('product_id')['order_id'].count().to_frame('number_of_purchases_for_products')
 
 product_probability_to_be_reordered = (orders[orders.consecutive_order_count > 1].groupby('product_id').size() / orders.groupby('product_id').size()).to_frame("product_probability_to_be_reordered")
@@ -32,7 +29,6 @@ how_many_times_user_bought_product = orders.groupby(['company_id', 'product_id']
 orders = orders.merge(how_many_times_user_bought_product, on=['company_id', 'product_id'], how='left')
 
 # Models
-
 train_dataset_percentage = 0.01
 
 orders_count = len(orders)
@@ -49,7 +45,7 @@ Y_test = X_test['reordered']
 X_test = X_test.drop(['reordered'], axis=1)
 
 
-rfc = RandomForestClassifier(n_estimators=20,max_depth=4, n_jobs=-1 ,random_state=69)
+rfc = RandomForestClassifier(n_estimators=20,max_depth=6, n_jobs=-1 ,random_state=69420)
 
 model = rfc.fit(X_train, Y_train)
 

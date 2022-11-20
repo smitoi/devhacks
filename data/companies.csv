@@ -1,7 +1,11 @@
 company_id,name,category_id
 1,Fast food Restaurant,2
-2,Traditional Restaurant,3
-3,Sweet Truck,5
-4,Grand Hotel,6
-5,Car Moto Fixes,8
-6,Self Car Clean,9
+2,Fast food Restaurant Competitor,2
+3,Traditional Restaurant,3
+4,Chinese Restaurant,3
+5,Sweet Truck,5
+6,Grand Hotel,6
+7,Intercontinental Hotel,6
+8,Car Moto Fixes,8
+9,Motor Leads,8
+10,Self Car Clean,9
