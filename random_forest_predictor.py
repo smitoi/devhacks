@@ -44,8 +44,7 @@ X_test = orders.tail(test_dataset_size)
 Y_test = X_test['reordered']
 X_test = X_test.drop(['reordered'], axis=1)
 
-
-rfc = RandomForestClassifier(n_estimators=20,max_depth=6, n_jobs=-1 ,random_state=69420)
+rfc = RandomForestClassifier(n_estimators=50, max_depth=6, n_jobs=-1 ,random_state=69420)
 
 model = rfc.fit(X_train, Y_train)
 
