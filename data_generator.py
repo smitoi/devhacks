@@ -35,12 +35,12 @@ company_categories_by_id = {
 companies_baskets_outliers = { key: np.setdiff1d(product_ids, companies_baskets[key]) for key in [_ for _ in range(1, 7, 1)] }
 
 min_orders_count = 10
-max_orders_count = 20
+max_orders_count = 15
 
-min_products_in_order = 10
-max_products_in_order = 50
+min_products_in_order = 2
+max_products_in_order = 10
 
-outlier_probability = 0.4
+outlier_probability = 0.2
 
 orders_array_by_company_id = {
     key: [] for key in range(1, 7, 1)

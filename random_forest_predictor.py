@@ -1,5 +1,5 @@
+import pickle
 import pandas as pd
-import gc
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -52,8 +52,8 @@ feature_importances_df = pd.DataFrame(model.feature_importances_, index = X_trai
 
 print(feature_importances_df)
 
-test_pred = model.predict(X_test).astype(int)
+with open('./rf-model.pkl', "wb") as file:
+    pickle.dump(model, file)
 
-acc = (test_pred == Y_test).mean()
-
-print(f"Accuracy: {acc}")
+with open("./orders_with_features.pkl", "wb") as file:
+    pd.to_pickle(orders, file)
